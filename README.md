@@ -17,15 +17,15 @@ Se recomienda que utilice un equipo con una instalación de linux que sea compat
 10. Despliegue la aplicación con el comando **"docker compose up --build"**.
 
 ## USO:
-1. Para verificar si la aplicación se desplegó correctamente, conectese a "localhost:8080" en su navegador web. Debería recibirlo la siguiente página en html:
+1. Para verificar si la aplicación se desplegó correctamente, conectese a **"localhost:8080"** en su navegador web. Debería recibirlo la siguiente página en html:
 
 ![catForm1](https://github.com/user-attachments/assets/6d83a4ec-60ca-46f6-a2ab-d314436aaf74)
 
-2. Conectese a "localhost:8081" en el navegador, debería recibirlo una interfaz de phpmyadmin con una base de datos "CatApp" creada, la cual contiene una base de datos llamada "results". Aquí se guardarán los resultados del formulario.
+2. Conectese a **"localhost:8081"** en el navegador, debería recibirlo una interfaz de phpmyadmin con una base de datos **"CatApp"** creada, la cual contiene una base de datos llamada **"results"**. Aquí se guardarán los resultados del formulario.
 
 ![image](https://github.com/user-attachments/assets/27951b97-99de-4086-81b1-6a173c1e83cb)
 
-3. Finalmente, llene los campos del formulario y haga click en "Submit". Se muestra una pantalla de agradecimiento.
+3. Finalmente, llene los campos del formulario y haga click en **"Submit"**. Se muestra una pantalla de agradecimiento.
 
 ![image](https://github.com/user-attachments/assets/a855cc58-ad4c-4f37-a339-8b3a4a0de6c8)
 
