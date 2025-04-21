@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./php_img_config
+    volumes:
+      - .:/var/www/html/
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:latest
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_USER: abc
+      MYSQL_PASSWORD: abc123
+    volumes:
+      - dbVolume:/var/lib/mysql
+      - ./sql_script/:/docker-entrypoint-initdb.d/
+    restart: unless-stopped
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    ports:
+      - 8081:80
+    environment:
+      PMA_HOST: db
+      PMA_USER: abc
+      PMA_PASSWORD: abc123
+    restart: unless-stopped
+    depends_on:
+      - db
+
+volumes:
+  dbVolume:

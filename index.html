@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cat Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Cat quiz</h1>
+    <p id="description">Welcome! This is a small questionnaire with the intent of finding out how much people know about cats. Thanks for participating!</p>
+    <form action="insert.php" method="post" id="survey-form">
+      <fieldset>
+        <legend>Contact info</legend>
+        <label id="name-label" for="name">Please enter your name (Required)<input name="username" type="text" id="name" placeholder="Only your first name" class="info" required></label>
+        <label id="email-label" for="email">Please enter your e-mail (Required) <input name="email" type="email" id="email" placeholder="benito@feomail..."  class="info" required></label>
+        <label id="age-label" for="age">Please enter your age (Optional)<input name="age" type="number" min="5" max="120" id="age" placeholder="20"  class="info"></label>
+      </fieldset>
+      <fieldset>
+        <legend>Question 1</legend>
+        <label for="dropdown">Which of the following is not a cat breed?
+          <select id="dropdown" name="catBreedSelect">
+            <option value="0">(select one)</option>
+            <option value="1">Bengal</option>
+            <option value="2">Belinese</option>
+            <option value="3">Sphynx</option>
+            <option value="4">Mandinguese</option>
+          </select>
+        </label>
+      </fieldset>      
+      <fieldset>
+        <legend>Question 2</legend>
+        <label>Is it true that cats hate water?</label>
+        <label for="true"><input class="inline" id="true" type="radio" name="catmyth" value="1" checked /> True </label>
+        <label for="false"><input class="inline" id="false" type="radio" name="catmyth" value="0"/> False</label>
+      </fieldset>
+      <fieldset>
+        <legend>Question 3</legend>
+        <label>What are some things cats love?</label>
+        <label for="field1"><input id="field1" type="checkbox" name="catslove[]" value="1" />Catnip
+        </label>
+        <label for="field2"><input id="field2" type="checkbox" name="catslove[]" value="2"/>Milk
+        </label>
+        <label for="field3"><input id="field3" type="checkbox" name="catslove[]" value="3"/>Naps
+        </label>
+        <label for="field4"><input id="field4" type="checkbox" name="catslove[]" value="4"/>Chili
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Additional comments</legend>
+        <label id="comment-label" for="coment">Please tells us if you think there's something we can do to improve this page! :3
+          <textarea id="coment" name="coment" rows="3" cols="30" placeholder="I think you should add funnier cats..."></textarea>
+        </label>
+      </fieldset>
+      
+      <input id="submit" type="submit" value="Submit">
+    </form>  
+  </body>
+</html>
