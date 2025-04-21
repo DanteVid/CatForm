@@ -6,8 +6,8 @@ A simple docker compose app, form in html/css using mariadb for persistence and 
 Se recomienda que utilice un equipo con una instalación de linux que sea compatible con docker y docker compose.
 
 ## PASOS DE INSTALACIÓN:
-1.
-2.
+1. Verifique su equipo tenga git instalado con "git version".
+2. Ubiquese en la carpeta donde desea clonar la aplicación, y ejecute el comando "git clone 
 3.
 4. Revise que docker y docker compose se encuentren instalados en su equipo mediante los comandos "docker version" y "docker compose version".
 5. Verifique que su usuario tenga acceso al daemon de docker usando el comando "groups", debería aparecer "docker". Si no es así, por favor use el comando "sudo usermod -a -G docker (SU NOMBRE DE USUARIO)"
